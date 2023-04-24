@@ -5,11 +5,18 @@
 #include <stdio.h>
 #include <stddef.h>
 
+/**
+* struct listint_s - doubly linked list node
+* @prev: pointer to previous element
+* @next: pointer to the next node
+* @n: constant integer
+*/
+
 typedef struct listint_s
 {
-    const int n;
-    struct listint_s *prev;
-    struct listint_s *next;
+	const int n;
+	struct listint_s *prev;
+	struct listint_s *next;
 } listint_t;
 
 void print_list(const listint_t *list);
