@@ -33,10 +33,10 @@ void bubble_sort(int *array, size_t size)
 	{
 		for (j = 0, i = 0; j < size - 1; j++)
 		{
-			if (array[i] > array[i + 1])
+			if (array[j] > array[j + 1])
 			{
-				swap_array(array, i, i + 1);
-				j++;
+				swap_array(array, j, j + 1);
+				i++;
 				print_array(array, size);
 			}
 		}
