@@ -20,7 +20,7 @@ void partition(int *array, int low, int high, size_t size)
 		{
 			if (i != j)
 			{
-				array_swap(array, i, j);
+				array_swaps(array, i, j);
 				print_array(array, size);
 			}
 			j++;
@@ -28,7 +28,7 @@ void partition(int *array, int low, int high, size_t size)
 	}
 	if (j != high)
 	{
-		array_swap(array, high, j);
+		array_swaps(array, high, j);
 		print_array(array, size);
 	}
 
@@ -37,7 +37,7 @@ void partition(int *array, int low, int high, size_t size)
 }
 
 /**
- * array_swap - swaps two integers in an array
+ * array_swaps - swaps two integers in an array
  * @array: array to be sorted
  * @a: index of first integer
  * @b: index of second integer
@@ -45,7 +45,7 @@ void partition(int *array, int low, int high, size_t size)
  * Return: Void
  */
 
-void array_swap(int *array, int a, int b)
+void array_swaps(int *array, int a, int b)
 {
 	int temp;
 
